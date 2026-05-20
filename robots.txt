@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://pacifica-spcx-preipo.vercel.app/sitemap.xml
+Sitemap: https://pacifica-spcx-pre-ipo-trading-space.vercel.app/sitemap.xml

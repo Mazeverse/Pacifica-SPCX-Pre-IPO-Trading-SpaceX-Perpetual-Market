@@ -5,130 +5,202 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Pacifica SPCX Pre-IPO Trading | SpaceX Perpetual Market</title>
 <meta name="description" content="SPCX pre-IPO perpetual trading is now live on Pacifica. Explore SpaceX exposure with up to 3x leverage and access Pacifica using the referral link." />
+<link rel="canonical" href="https://pacifica-spcx-pre-ipo-trading-space.vercel.app/" />
 <meta name="google-site-verification" content="BtBII3918J1J9BnNiNfjVaPn0QXfIj5xoi1G_8qtFk4" />
 <meta name="naver-site-verification" content="f28f86b7853e4f6704297b86d7def790b41e00e4" />
+
 <meta property="og:title" content="Pacifica SPCX Pre-IPO Trading" />
-<meta property="og:description" content="SpaceX pre-IPO perpetual trading is now live on Pacifica." />
-<meta property="og:image" content="pacifica-spcx.png" />
+<meta property="og:description" content="SPCX pre-IPO perpetual trading is now live on Pacifica with up to 3x leverage." />
+<meta property="og:image" content="https://pacifica-spcx-pre-ipo-trading-space.vercel.app/pacifica-spcx-preipo.jpg" />
+<meta property="og:url" content="https://pacifica-spcx-pre-ipo-trading-space.vercel.app/" />
 <meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Pacifica SPCX Pre-IPO Trading" />
+<meta name="twitter:description" content="SPCX pre-IPO perpetual trading is now live on Pacifica." />
+<meta name="twitter:image" content="https://pacifica-spcx-pre-ipo-trading-space.vercel.app/pacifica-spcx-preipo.jpg" />
+
 <style>
-body{
-background:#07131a;
-color:#dffcf8;
-font-family:Arial,sans-serif;
-margin:0;
-line-height:1.7;
+* {
+  box-sizing: border-box;
 }
-.container{
-max-width:960px;
-margin:auto;
-padding:32px 20px;
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background:
+    radial-gradient(circle at top left, rgba(44, 214, 203, 0.18), transparent 34%),
+    linear-gradient(135deg, #061216 0%, #091b24 48%, #07131a 100%);
+  color: #e7fffb;
+  line-height: 1.75;
 }
-.hero{
-background:linear-gradient(135deg,#0b1f2a,#0d2d3a);
-padding:32px;
-border-radius:24px;
-box-shadow:0 0 30px rgba(0,255,200,0.08);
+.container {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 34px 20px 52px;
 }
-h1{
-font-size:2.6rem;
-color:#67ffe8;
-margin-bottom:12px;
+.hero {
+  padding: 34px;
+  border-radius: 28px;
+  background: rgba(255,255,255,0.045);
+  border: 1px solid rgba(103,255,232,0.16);
+  box-shadow: 0 24px 80px rgba(0,0,0,0.28);
 }
-.card{
-margin-top:28px;
-padding:24px;
-border-radius:20px;
-background:rgba(255,255,255,0.04);
+.badge {
+  display: inline-block;
+  padding: 7px 12px;
+  border-radius: 999px;
+  background: rgba(103,255,232,0.12);
+  color: #67ffe8;
+  font-weight: 700;
+  font-size: 0.9rem;
+  margin-bottom: 12px;
 }
-img{
-width:100%;
-border-radius:18px;
-margin-top:20px;
+h1 {
+  font-size: clamp(2.1rem, 5vw, 3.6rem);
+  line-height: 1.12;
+  margin: 0 0 16px;
+  color: #67ffe8;
 }
-.button{
-display:inline-block;
-margin-top:18px;
-padding:14px 24px;
-background:#67ffe8;
-color:#001219;
-font-weight:bold;
-text-decoration:none;
-border-radius:12px;
+h2 {
+  color: #bafff6;
+  margin-top: 0;
 }
-.footer{
-margin-top:40px;
-opacity:0.7;
-font-size:0.92rem;
+.lead {
+  font-size: 1.14rem;
+  color: #d7fffb;
 }
-.code{
-background:rgba(103,255,232,0.08);
-padding:10px 14px;
-border-radius:10px;
-margin-top:12px;
-display:inline-block;
+img {
+  width: 100%;
+  display: block;
+  border-radius: 22px;
+  margin-top: 24px;
+  border: 1px solid rgba(255,255,255,0.12);
+}
+.actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 22px;
+}
+.button {
+  display: inline-block;
+  padding: 14px 24px;
+  background: #67ffe8;
+  color: #001219;
+  font-weight: 800;
+  text-decoration: none;
+  border-radius: 14px;
+}
+.code {
+  padding: 12px 15px;
+  border-radius: 14px;
+  background: rgba(103,255,232,0.08);
+  color: #cffff8;
+}
+.card {
+  margin-top: 26px;
+  padding: 26px;
+  border-radius: 22px;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  margin-top: 18px;
+}
+.mini {
+  padding: 18px;
+  border-radius: 18px;
+  background: rgba(103,255,232,0.07);
+}
+.mini strong {
+  display: block;
+  color: #67ffe8;
+  margin-bottom: 6px;
+}
+.footer {
+  margin-top: 36px;
+  opacity: 0.76;
+  font-size: 0.92rem;
+}
+@media (max-width: 720px) {
+  .hero {
+    padding: 24px;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+  }
 }
 </style>
 </head>
 <body>
-<div class="container">
+  <main class="container">
+    <section class="hero">
+      <div class="badge">Pacifica · SPCX Pre-IPO Perp</div>
+      <h1>SPCX Pre-IPO Trading is Live on Pacifica</h1>
 
-<div class="hero">
-<h1>SPCX Pre-IPO Trading is Live on Pacifica</h1>
+      <p class="lead">
+        The line between crypto and traditional markets keeps getting thinner.
+        Pacifica has introduced SPCX, a SpaceX pre-IPO perpetual market with up to 3x leverage.
+      </p>
 
-<p>
-The line between crypto and traditional markets keeps getting thinner.
-Pacifica has now introduced SPCX, a SpaceX pre-IPO perpetual market with up to 3x leverage.
-</p>
+      <p>
+        This feels like another glimpse into the future of onchain trading.
+        Private-company exposure, perpetual markets, and crypto-native access are now crossing paths.
+      </p>
 
-<p>
-This feels like another glimpse into the future of onchain trading.
-</p>
+      <div class="actions">
+        <a class="button" href="https://app.pacifica.fi?referral=Vip" target="_blank" rel="noopener noreferrer">Open Pacifica</a>
+        <div class="code">Referral: <strong>Vip</strong></div>
+      </div>
 
-<a class="button" href="https://app.pacifica.fi?referral=Vip" target="_blank">
-Open Pacifica
-</a>
+      <img src="pacifica-spcx-preipo.jpg" alt="Pacifica announcement for SPCX SpaceX pre IPO perpetual trading" />
+    </section>
 
-<div class="code">
-Referral: Vip
-</div>
+    <section class="card">
+      <h2>Why SPCX Is Getting Attention</h2>
+      <p>
+        SPCX represents synthetic exposure to one of the world's most talked-about private companies: SpaceX.
+        Instead of waiting for a traditional IPO, traders can speculate on price movement through perpetual markets.
+      </p>
+      <p>
+        Pacifica currently supports up to 3x leverage for the SPCX market.
+        As always, low liquidity and volatility risks should be considered carefully.
+      </p>
 
-<img src="pacifica-spcx.png" alt="Pacifica SPCX pre IPO market screenshot" />
-</div>
+      <div class="grid">
+        <div class="mini">
+          <strong>Market</strong>
+          SPCX pre-IPO perp
+        </div>
+        <div class="mini">
+          <strong>Platform</strong>
+          Pacifica
+        </div>
+        <div class="mini">
+          <strong>Leverage</strong>
+          Up to 3x
+        </div>
+      </div>
+    </section>
 
-<div class="card">
-<h2>Why SPCX Is Getting Attention</h2>
+    <section class="card">
+      <h2>Future of Perpetual Markets</h2>
+      <p>
+        From Bitcoin and Ethereum to pre-IPO private company exposure, perpetual DEX platforms continue evolving rapidly.
+        Projects like Pacifica are pushing crypto trading into increasingly experimental territory.
+      </p>
+      <p>
+        This page is a simple record of the SPCX market becoming available on Pacifica and a quick gateway for users who want to explore it.
+      </p>
+    </section>
 
-<p>
-SPCX represents synthetic exposure to one of the world's most talked-about private companies: SpaceX.
-</p>
-
-<p>
-Instead of waiting for a traditional IPO, traders can now speculate on price movement through perpetual markets directly inside the crypto ecosystem.
-</p>
-
-<p>
-Pacifica currently supports up to 3x leverage for the SPCX market.
-As always, low liquidity and volatility risks should be considered carefully.
-</p>
-</div>
-
-<div class="card">
-<h2>Future of Perpetual Markets</h2>
-
-<p>
-From Bitcoin and Ethereum to pre-IPO private company exposure, perpetual DEX platforms continue evolving rapidly.
-</p>
-
-<p>
-Projects like Pacifica are pushing crypto trading into increasingly experimental territory.
-</p>
-</div>
-
-<div class="footer">
-This page is for informational purposes only and is not financial advice. Perpetual trading carries significant risk.
-</div>
-
-</div>
+    <div class="footer">
+      This page is for informational purposes only and is not financial advice.
+      Perpetual trading carries significant risk.
+    </div>
+  </main>
 </body>
 </html>
